@@ -18,7 +18,7 @@ def app():
   if Analyzer_choice == "Curie":
     if button and promptff:
       user_input = promptff
-      openai.api_key = "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"
+      openai.api_key = "sk-xzeb14KCaxmahxrwU29WT3BlbkFJHTqswIPmRa4BgCGmVMQ0i"
       with st.spinner("Generating Headline, please wait.."):
         response = openai.Completion.create(
           model="text-curie-001",
@@ -35,7 +35,7 @@ def app():
   else:
     if button and promptff:
       user_input = promptff
-      openai.api_key = "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"
+      openai.api_key = "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"
       with st.spinner("Generating Headline, please wait.."):
         response2 = openai.Completion.create(
           model="text-davinci-003",
